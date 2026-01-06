@@ -8,7 +8,7 @@
 
 ## 『 **KAYKE MENDES** 』
 
-<img src="./kayke.jpg" alt="Character Avatar" width="200" style="border: 5px solid #D4AF37; border-radius: 10px; box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);"/>
+<img src="./kayke.jpeg" alt="Character Avatar" width="200" style="border: 5px solid #D4AF37; border-radius: 10px; box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);"/>
 
 ### ⚜️ **SENIOR SOFTWARE ENGINEER** ⚜️
 ### 🏛️ **FOUNDER @ VERSILION.IO** 🏛️
