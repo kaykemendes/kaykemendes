@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0.0",
+  "repository": {
+    "name": "kaykemendes",
+    "path": "/Users/kaykera/Projects/kaykemendes",
+    "managedBy": "versilion-labs",
+    "projectId": "kaykemendes",
+    "parentProjectId": null
+  },
+  "pipeline": {
+    "version": "2.0.0",
+    "mode": "standard",
+    "custom": false,
+    "customConfigPath": ".versilion-labs/pipeline.custom.json",
+    "engine": "versilion-central"
+  },
+  "quality": {
+    "lint": true,
+    "typecheck": true,
+    "tests": true,
+    "sast": {
+      "sonar": false,
+      "fortify": false,
+      "mend": false
+    }
+  },
+  "terraform": {
+    "repo": null,
+    "workspace": null,
+    "override": false,
+    "forceApplyOnOverride": true,
+    "overrideReason": null
+  },
+  "aws": {
+    "region": "sa-east-1",
+    "forceUpdateOnOverride": true
+  },
+  "release": {
+    "showCurrentVersionInGreen": true,
+    "generateSquashSummary": true,
+    "summaryProvider": "amazon-bedrock"
+  },
+  "governance": {
+    "labs": {
+      "requireProfile": true,
+      "allowedProfiles": [
+        "owner",
+        "platform-admin",
+        "repo-admin",
+        "maintainer"
+      ],
+      "denyEditWithoutProfile": true,
+      "denyBypassApprovals": true,
+      "denyProtectedBranchActions": true
+    },
+    "github": {
+      "owner": "kaykemendes",
+      "mirrorRepoName": null,
+      "defaultBranch": "main",
+      "protectedBranches": [
+        "main",
+        "master"
+      ],
+      "requirePullRequest": true,
+      "requireApprovals": 1,
+      "dismissStaleReviews": true,
+      "enforceAdmins": true,
+      "allowForcePushes": false,
+      "allowDeletions": false,
+      "allowBypassPullRequest": false,
+      "allowBypassBranchProtection": false,
+      "requireStatusChecks": [],
+      "restrictionTeams": [],
+      "restrictionUsers": []
+    }
+  },
+  "contract": {
+    "version": "2.0.0",
+    "projectId": "kaykemendes",
+    "parentProjectId": null,
+    "projectType": "other",
+    "runtime": {
+      "kind": "other"
+    },
+    "packageManager": null,
+    "commands": {},
+    "quality": {
+      "availableChecks": [],
+      "requiredChecks": [],
+      "securityChecks": []
+    },
+    "integration": {
+      "sourceOfTruth": "versilion-labs",
+      "catalogProjectId": "kaykemendes",
+      "githubActions": false,
+      "deployProvider": "versilion-pipeline",
+      "eventProtocol": "versilion.project.v1",
+      "artifact": "release-manifest.json",
+      "events": [
+        "pipeline.started",
+        "pipeline.stage.completed",
+        "pipeline.completed",
+        "pipeline.failed",
+        "release.promoted"
+      ]
+    },
+    "publication": {
+      "provider": "versilion-pipeline",
+      "environment": null,
+      "liveUrl": null,
+      "targetConfigured": false,
+      "enabled": false,
+      "requiresExplicitTarget": true
+    }
+  }
+}
